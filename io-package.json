@@ -1,7 +1,7 @@
 {
     "common": {
         "name": "ecoflow",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "news": {
             "0.0.1": {
                 "en": "initial release",
@@ -16,7 +16,6 @@
                 "zh-cn": "首次出版"
             }
         },
-        "title": "ecoflow Powerstations",
         "titleLang": {
             "en": "ecoflow Powerstations",
             "de": "ecoflow Kraftwerke",
