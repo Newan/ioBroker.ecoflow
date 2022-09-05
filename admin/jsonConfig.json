@@ -1,0 +1,63 @@
+{
+    "i18n": true,
+    "type": "tabs",
+    "items": {
+      "general": {
+        "type": "panel",
+        "label": "general",
+        "items": {
+          "polltime": {
+            "newLine": true,
+            "type": "number",
+            "label": "polltime",
+            "help": "polltime_help",
+            "min": 1,
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "sn": {
+            "newLine": true,
+            "type": "text",
+            "label": "sn",
+            "help": "sn_help",
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "apikey": {
+            "newLine": true,
+            "type": "text",
+            "label": "apikey",
+            "help": "apikey_help",
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },          
+          "secretkey": {
+            "newLine": true,
+            "type": "text",
+            "label": "secretkey",
+            "help": "secretkey_help",
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          },
+          "_spacer": {
+            "type": "divider",
+            "color": "secondary"
+          },
+          "_donation": {
+            "newLine": true,
+            "type": "staticLink",
+            "href": "https://www.paypal.com/donate/?hosted_button_id=KNPGJTDLWR4CG",
+            "button": "button",
+            "icon": "https://www.paypalobjects.com/en_US/DK/i/btn/btn_donateCC_LG.gif",
+            "sm": 12,
+            "md": 6,
+            "lg": 6
+          }
+        }
+      }
+    }
+  }

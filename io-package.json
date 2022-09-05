@@ -1,0 +1,151 @@
+{
+    "common": {
+        "name": "ecoflow",
+        "version": "0.0.1",
+        "news": {
+            "0.0.1": {
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Начальная версия",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "zh-cn": "首次出版"
+            }
+        },
+        "title": "ecoflow Powerstations",
+        "titleLang": {
+            "en": "ecoflow Powerstations",
+            "de": "ecoflow Kraftwerke",
+            "ru": "Электростанции Ecoflow",
+            "pt": "Centrais elétricas ecoflow",
+            "nl": "ecoflow-krachtcentrales",
+            "fr": "ecoflow Centrales électriques",
+            "it": "centrali elettriche ecoflow",
+            "es": "Centrales eléctricas ecoflow",
+            "pl": "Elektrownie ecoflow",
+            "zh-cn": "ecoflow 发电站"
+        },
+        "desc": {
+            "en": "ecoflow powerstation",
+            "de": "ecoflow Kraftwerk",
+            "ru": "электростанция экопотока",
+            "pt": "estação de energia ecoflow",
+            "nl": "ecoflow krachtcentrale",
+            "fr": "centrale ecoflow",
+            "it": "centrale elettrica ecoflow",
+            "es": "estación de energía ecoflow",
+            "pl": "elektrownia ecoflow",
+            "zh-cn": "生态流电站"
+        },
+        "authors": [
+            "newan <info@newan.de>"
+        ],
+        "keywords": [
+            "ecoflow powerstation"
+        ],
+        "license": "MIT",
+        "platform": "Javascript/Node.js",
+        "main": "build/main.js",
+        "icon": "ecoflow.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/newan/ioBroker.ecoflow/main/admin/ecoflow.png",
+        "readme": "https://github.com/newan/ioBroker.ecoflow/blob/main/README.md",
+        "loglevel": "info",
+        "mode": "daemon",
+        "type": "energy",
+        "compact": true,
+        "connectionType": "cloud",
+        "dataSource": "poll",
+        "adminUI": {
+            "config": "json"
+        },
+        "dependencies": [
+            {
+                "js-controller": ">=3.3.22"
+            }
+        ],
+        "globalDependencies": [
+            {
+                "admin": ">=5.1.13"
+            }
+        ]
+    },
+    "native": {
+        "polltime": 30,
+        "apikey": "",
+        "sn": "",
+        "secretkey": ""
+    },
+    "objects": [],
+    "instanceObjects": [
+        {
+            "_id": "info.connection",
+            "type": "state",
+            "common": {
+                "role": "indicator.connected",
+                "name": "If communication with ecoflow works",
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        },
+        {
+            "_id": "status.soc",
+            "type": "state",
+            "common": {
+                "role": "state",
+                "name": "batterySoc",
+                "type": "number",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        },
+        {
+            "_id": "status.remainTime",
+            "type": "state",
+            "common": {
+                "role": "state",
+                "name": "remainTime",
+                "type": "number",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        }, 
+        {
+            "_id": "status.wattsOutSum",
+            "type": "state",
+            "common": {
+                "role": "state",
+                "name": "wattsOutSum",
+                "type": "number",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        }, 
+        {
+            "_id": "status.wattsInSum",
+            "type": "state",
+            "common": {
+                "role": "state",
+                "name": "wattsInSum",
+                "type": "number",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        }       
+    ]
+}

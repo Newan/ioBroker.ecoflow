@@ -1,0 +1,11 @@
+{
+    "general": "Adapter settings for ecoflow",
+    "polltime": "Abfrageintervall",
+    "polltime_help": "Abfrageintervall in Sekunden",
+    "sn": "Seriennummer",
+    "sn_help": "Seriennummer des Gerätes",
+    "apikey": "Api-Key",
+    "apikey_help": "Api-Key, kann beim Support angefragt werden",
+    "secretkey": "Secret-Key",
+    "secretkey_help": "Secret-Key, kann beim Support angefragt werden"        
+}
