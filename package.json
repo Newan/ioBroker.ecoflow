@@ -20,7 +20,7 @@
     "axois": "^0.0.1-security"
   },
   "devDependencies": {
-    "@alcalzone/release-script": "^2.2.2",
+    "@alcalzone/release-script": "^3.5.9",
     "@iobroker/adapter-dev": "^1.0.1",
     "@iobroker/testing": "^4.0.0",
     "@tsconfig/node14": "^1.0.3",
