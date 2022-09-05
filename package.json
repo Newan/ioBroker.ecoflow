@@ -3,17 +3,17 @@
   "version": "0.0.2",
   "description": "ecoflow powerstation",
   "author": {
-    "name": "newan",
+    "name": "Newan",
     "email": "info@newan.de"
   },
-  "homepage": "https://github.com/newan/ioBroker.ecoflow",
+  "homepage": "https://github.com/Newan/ioBroker.ecoflow",
   "license": "MIT",
   "keywords": [
     "ecoflow powerstation"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/newan/ioBroker.ecoflow.git"
+    "url": "https://github.com//ioBroker.ecoflow.git"
   },
   "dependencies": {
     "@iobroker/adapter-core": "^2.6.0",
@@ -71,7 +71,7 @@
     "release": "release-script"
   },
   "bugs": {
-    "url": "https://github.com/newan/ioBroker.ecoflow/issues"
+    "url": "https://github.com/Newan/ioBroker.ecoflow/issues"
   },
   "readmeFilename": "README.md"
 }

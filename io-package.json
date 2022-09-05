@@ -3,6 +3,18 @@
         "name": "ecoflow",
         "version": "0.0.2",
         "news": {
+            "0.0.2": {
+                "en": "fix for adapterChecker",
+                "de": "Fehlerbehebung für Adapter Prüfer",
+                "ru": "исправить для адаптера Проверить",
+                "pt": "correção para o adaptador Checker",
+                "nl": "_ Checker",
+                "fr": "fixation pour adaptateur Checker",
+                "it": "fissaggio per adattatore Checker",
+                "es": "fijación para adaptador Checker",
+                "pl": "naprawić Checker",
+                "zh-cn": "f 配 方 车臣"
+            },            
             "0.0.1": {
                 "en": "initial release",
                 "de": "Erstveröffentlichung",
@@ -41,7 +53,7 @@
             "zh-cn": "生态流电站"
         },
         "authors": [
-            "newan <info@newan.de>"
+            "Newan <info@newan.de>"
         ],
         "keywords": [
             "ecoflow powerstation"
@@ -51,8 +63,8 @@
         "main": "build/main.js",
         "icon": "ecoflow.png",
         "enabled": true,
-        "extIcon": "https://raw.githubusercontent.com/newan/ioBroker.ecoflow/main/admin/ecoflow.png",
-        "readme": "https://github.com/newan/ioBroker.ecoflow/blob/main/README.md",
+        "extIcon": "https://raw.githubusercontent.com/Newan/ioBroker.ecoflow/main/admin/ecoflow.png",
+        "readme": "https://github.com/Newan/ioBroker.ecoflow/blob/main/README.md",
         "loglevel": "info",
         "mode": "daemon",
         "type": "energy",

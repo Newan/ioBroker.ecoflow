@@ -8,7 +8,7 @@
 
 [![NPM](https://nodei.co/npm/iobroker.ecoflow.png?downloads=true)](https://nodei.co/npm/iobroker.ecoflow/)
 
-**Tests:** ![Test and Release](https://github.com/newan/ioBroker.ecoflow/workflows/Test%20and%20Release/badge.svg)
+**Tests:** ![Test and Release](https://github.com/Newan/ioBroker.ecoflow/workflows/Test%20and%20Release/badge.svg)
 
 ## ecoflow adapter for ioBroker
 
@@ -24,12 +24,12 @@ API key and secret key are required for operation. These data are individual and
     ### **WORK IN PROGRESS**
 -->
 ### 0.0.2 (2022-09-05)
-* (newan) initial release
+* (Newan) initial release
 
 ## License
 MIT License
 
-Copyright (c) 2022 newan <info@newan.de>
+Copyright (c) 2022 Newan <info@newan.de>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
