@@ -23,6 +23,9 @@ API key and secret key are required for operation. These data are individual and
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* add RemaiTime varibales for day, hour, minute
+
 ### 0.0.2 (2022-09-05)
 * (Newan) initial release
 

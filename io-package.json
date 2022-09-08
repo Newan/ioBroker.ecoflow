@@ -3,6 +3,18 @@
         "name": "ecoflow",
         "version": "0.0.2",
         "news": {
+            "0.0.3": {
+                "en": "add remain time options",
+                "de": "remainTime zeitoptionen hinzufügen",
+                "ru": "добавить опции времени",
+                "pt": "adicionar opções de tempo",
+                "nl": "vertaling:",
+                "fr": "ajouter des options de temps",
+                "it": "aggiungere rimangono opzioni di tempo",
+                "es": "añadir opciones de tiempo",
+                "pl": "opcje czasowe",
+                "zh-cn": "增加时间的选择"
+            },
             "0.0.2": {
                 "en": "fix for adapterChecker",
                 "de": "Fehlerbehebung für Adapter Prüfer",
@@ -132,6 +144,45 @@
             },
             "native": {}
         }, 
+        {
+            "_id": "status.remainTimeDay",
+            "type": "state",
+            "common": {
+                "role": "state",
+                "name": "remainTimeDay",
+                "type": "number",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        }, 
+        {
+            "_id": "status.remainTimeHour",
+            "type": "state",
+            "common": {
+                "role": "state",
+                "name": "remainTimeHour",
+                "type": "number",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        }, 
+        {
+            "_id": "status.remainTimeMinute",
+            "type": "state",
+            "common": {
+                "role": "state",
+                "name": "remainTimeMinute",
+                "type": "number",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        },                         
         {
             "_id": "status.wattsOutSum",
             "type": "state",

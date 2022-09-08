@@ -82,6 +82,7 @@ class Ecoflow extends utils.Adapter {
         this.log.debug("Get-Data from ecoflow:" + JSON.stringify(response.data));
         await this.setStateAsync("status.soc", { val: response.data.data.soc, ack: true });
         await this.setStateAsync("status.remainTime", { val: response.data.data.remainTime, ack: true });
+        await this.setNewRemainTime(response.data.data.remainTime);
         await this.setStateAsync("status.wattsOutSum", { val: response.data.data.wattsOutSum, ack: true });
         await this.setStateAsync("status.wattsInSum", { val: response.data.data.wattsInSum, ack: true });
         this.setState("info.connection", true, true);
@@ -97,6 +98,11 @@ class Ecoflow extends utils.Adapter {
         this.log.error(error.message);
       }
     }
+  }
+  async setNewRemainTime(remaintime) {
+    await this.setStateAsync("status.remainTimeDay", { val: Math.floor(remaintime / 60 / 24), ack: true });
+    await this.setStateAsync("status.remainTimeHour", { val: Math.floor(remaintime / 60), ack: true });
+    await this.setStateAsync("status.remainTimeMinute", { val: Math.floor(remaintime % 60), ack: true });
   }
 }
 if (require.main !== module) {
