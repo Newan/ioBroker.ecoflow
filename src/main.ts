@@ -12,6 +12,7 @@ class Ecoflow extends utils.Adapter {
     private apikey='';
     private secretkey='';
     private polltime=0;
+    private timeout=1000;
     private adapterIntervals: any; //halten von allen Intervallen
 
     public constructor(options: Partial<utils.AdapterOptions> = {}) {
@@ -28,6 +29,7 @@ class Ecoflow extends utils.Adapter {
         //Püfen die übergabe da ist
         if(this.config.sn) {
             this.sn = this.config.sn;
+            this.log.debug('SN found:' + this.sn);
         } else {
             this.log.error('No secretkey is set, adapter stop')
             return;
@@ -35,6 +37,7 @@ class Ecoflow extends utils.Adapter {
 
         if(this.config.apikey) {
             this.apikey = this.config.apikey;
+            this.log.debug('ApiKey found:' + this.apikey);
         } else {
             this.log.error('No apikey is set, adapter stop')
             return;
@@ -42,6 +45,7 @@ class Ecoflow extends utils.Adapter {
 
         if(this.config.secretkey) {
             this.secretkey = this.config.secretkey;
+            this.log.debug('Secret-Key found:' + this.secretkey);
         } else {
             this.log.error('No secretkey is set, adapter stop')
             return;
@@ -50,6 +54,8 @@ class Ecoflow extends utils.Adapter {
         //Prüfen Polltime
         if(this.config.polltime > 0) {
             this.polltime = this.config.polltime;
+            this.timeout = (this.polltime * 1000) - 500; //'500ms unter interval'
+
         } else {
             this.log.error('Wrong Polltime (polltime < 0), adapter stop')
             return;
@@ -83,17 +89,25 @@ class Ecoflow extends utils.Adapter {
                     'Content-Type': 'application/json',
                     'appKey': this.apikey,
                     'secretKey': this.secretkey
-                }}).then( async response => {
+                },
+                timeout: this.timeout}).then( async response => {
+
                 this.log.debug('Get-Data from ecoflow:' + JSON.stringify(response.data));
 
-                //Global status Items
-                await this.setStateAsync('status.soc', { val: response.data.data.soc, ack: true });
-                await this.setStateAsync('status.remainTime', { val: response.data.data.remainTime, ack: true });
-                await this.setNewRemainTime(response.data.data.remainTime); //Tim in Days/Hour/Minute
-                await this.setStateAsync('status.wattsOutSum', { val: response.data.data.wattsOutSum, ack: true });
-                await this.setStateAsync('status.wattsInSum', { val: response.data.data.wattsInSum, ack: true });
+                if ('message' in response.data) {
+                    //APi returned always 200 but error message
+                    this.log.error(response.data.message);
+                    this.setState('info.connection', false, true);
+                } else {
+                    //Global status Items
+                    await this.setStateAsync('status.soc', { val: response.data.data.soc, ack: true });
+                    await this.setStateAsync('status.remainTime', { val: response.data.data.remainTime, ack: true });
+                    await this.setNewRemainTime(response.data.data.remainTime); //Time in Days/Hour/Minute
+                    await this.setStateAsync('status.wattsOutSum', { val: response.data.data.wattsOutSum, ack: true });
+                    await this.setStateAsync('status.wattsInSum', { val: response.data.data.wattsInSum, ack: true });
 
-                this.setState('info.connection', true, true);
+                    this.setState('info.connection', true, true);
+                }
             }).catch(error => {
                 this.log.error(error.message)
                 this.setState('info.connection', false, true);

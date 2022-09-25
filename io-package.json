@@ -97,6 +97,12 @@
             }
         ]
     },
+    "protectedNative": [
+        "secretkey"
+    ],
+    "encryptedNative": [
+        "secretkey"
+    ],    
     "native": {
         "polltime": 30,
         "apikey": "",
@@ -143,7 +149,7 @@
                 "type": "number",
                 "read": true,
                 "write": false,
-                "def": false
+                "def": 0
             },
             "native": {}
         },
@@ -156,7 +162,7 @@
                 "type": "number",
                 "read": true,
                 "write": false,
-                "def": false
+                "def": 0
             },
             "native": {}
         }, 
@@ -169,7 +175,7 @@
                 "type": "number",
                 "read": true,
                 "write": false,
-                "def": false
+                "def": 0
             },
             "native": {}
         }, 
@@ -182,7 +188,7 @@
                 "type": "number",
                 "read": true,
                 "write": false,
-                "def": false
+                "def": 0
             },
             "native": {}
         }, 
@@ -195,7 +201,7 @@
                 "type": "number",
                 "read": true,
                 "write": false,
-                "def": false
+                "def": 0
             },
             "native": {}
         },                         
@@ -208,7 +214,7 @@
                 "type": "number",
                 "read": true,
                 "write": false,
-                "def": false
+                "def": 0
             },
             "native": {}
         }, 
@@ -221,7 +227,7 @@
                 "type": "number",
                 "read": true,
                 "write": false,
-                "def": false
+                "def": 0
             },
             "native": {}
         }       
