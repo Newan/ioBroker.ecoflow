@@ -91,11 +91,10 @@ class Ecoflow extends utils.Adapter {
                     'secretKey': this.secretkey
                 },
                 timeout: this.timeout}).then( async response => {
-
                 this.log.debug('Get-Data from ecoflow:' + JSON.stringify(response.data));
 
-                if ('message' in response.data) {
-                    //APi returned always 200 but error message
+                if (response.data.data === undefined) {
+                    //API returned always 200 but error message
                     this.log.error(response.data.message);
                     this.setState('info.connection', false, true);
                 } else {
@@ -105,7 +104,7 @@ class Ecoflow extends utils.Adapter {
                     await this.setNewRemainTime(response.data.data.remainTime); //Time in Days/Hour/Minute
                     await this.setStateAsync('status.wattsOutSum', { val: response.data.data.wattsOutSum, ack: true });
                     await this.setStateAsync('status.wattsInSum', { val: response.data.data.wattsInSum, ack: true });
-
+                    this.log.debug('Data received and wrote in objects');
                     this.setState('info.connection', true, true);
                 }
             }).catch(error => {
