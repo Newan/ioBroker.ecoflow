@@ -49,9 +49,10 @@
           },
           "_donation": {
             "newLine": true,
+            "text":"",
             "type": "staticLink",
             "href": "https://www.paypal.com/donate/?hosted_button_id=KNPGJTDLWR4CG",
-            "button": "button",
+            "button": true,
             "icon": "https://www.paypalobjects.com/en_US/DK/i/btn/btn_donateCC_LG.gif",
             "sm": 12,
             "md": 6,
