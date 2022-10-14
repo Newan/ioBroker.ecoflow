@@ -23,6 +23,10 @@ API key and secret key are required for operation. These data are individual and
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
+
+### **WORK IN PROGRESS**
+* update for latest-repository
+
 ### 0.0.3 (2022-09-08)
 * add RemaiTime varibales for day, hour, minute
 
