@@ -1,5 +1,14 @@
 {
     "ecoflow adapter settings": "Configurações do adaptador para ecoflow",
     "option1": "Opção 1",
-    "option2": "opção 2"
+    "option2": "opção 2",
+    "general": "Configurações do adaptador para ecoflow",
+    "polltime": "Abfrageintervall",
+    "polltime_help": "Abfrageintervall em Sekunden",
+    "sn": "Número de série",
+    "sn_help": "Serienummer des Gerätes",
+    "apikey": "Chave API",
+    "apikey_help": "Api-Key, kann beim Suporte angefragt werden",
+    "secretkey": "Chave secreta",
+    "secretkey_help": "Chave Secreta, kann beim Suporte angefragt werden"
 }

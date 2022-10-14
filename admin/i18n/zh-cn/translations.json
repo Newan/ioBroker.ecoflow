@@ -1,5 +1,14 @@
 {
     "ecoflow adapter settings": "ecoflow的适配器设置",
     "option1": "选项1",
-    "option2": "选项2"
+    "option2": "选项2",
+    "general": "ecoflow 的适配器设置",
+    "polltime": "缩略语",
+    "polltime_help": "塞昆登的Abfrageintervall",
+    "sn": "序列号",
+    "sn_help": "Seriennummer des Gerätes",
+    "apikey": "API密钥",
+    "apikey_help": "Api-Key, kann beim 支持 angelfragt werden",
+    "secretkey": "密钥",
+    "secretkey_help": "Secret-Key, kann beim 支持 angelfragt werden"
 }

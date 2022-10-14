@@ -1,5 +1,14 @@
 {
     "ecoflow adapter settings": "Настройки адаптера для ecoflow",
     "option1": "Опция 1",
-    "option2": "вариант 2"
+    "option2": "вариант 2",
+    "general": "Настройки адаптера для экопотока",
+    "polltime": "Абфрагеинтервал",
+    "polltime_help": "Abfrageintervall в Секундене",
+    "sn": "Серийный номер",
+    "sn_help": "Seriennummer des Gerätes",
+    "apikey": "Апи-Ключ",
+    "apikey_help": "Api-Key, kann beim Support angefragt werden",
+    "secretkey": "Секретный ключ",
+    "secretkey_help": "Secret-Key, kann beim Support angefragt werden"
 }
