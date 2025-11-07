@@ -90,6 +90,7 @@
         "extIcon": "https://raw.githubusercontent.com/Newan/ioBroker.ecoflow/main/admin/ecoflow.png",
         "readme": "https://github.com/Newan/ioBroker.ecoflow/blob/main/README.md",
         "loglevel": "info",
+        "tier": 2,
         "mode": "daemon",
         "type": "energy",
         "compact": true,
