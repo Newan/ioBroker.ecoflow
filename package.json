@@ -9,6 +9,7 @@
   "homepage": "https://github.com/Newan/ioBroker.ecoflow",
   "license": "MIT",
   "keywords": [
+    "ioBroker",
     "ecoflow powerstation"
   ],
   "repository": {
