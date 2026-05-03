@@ -32,6 +32,8 @@ API key and secret key are required for operation. These data are individual and
 ### 0.0.2 (2022-09-05)
 * (Newan) initial release
 
+[Older changelogs can be found there](CHANGELOG_OLD.md)
+
 ## License
 MIT License
 
