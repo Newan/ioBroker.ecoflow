@@ -1,247 +1,247 @@
 {
-    "common": {
-        "name": "ecoflow",
-        "version": "0.0.4",
-        "news": {
-            "0.0.4": {
-                "en": "update for latest-repository",
-                "de": "Update für neuestes Repository",
-                "ru": "обновление для последнего репозитория",
-                "pt": "atualização para o repositório mais recente",
-                "nl": "update voor laatste-repository",
-                "fr": "mise à jour pour le dernier référentiel",
-                "it": "aggiornamento per l'ultimo repository",
-                "es": "actualización para el último repositorio",
-                "pl": "aktualizacja do najnowszego repozytorium",
-                "zh-cn": "更新最新存储库"
-            },
-            "0.0.3": {
-                "en": "add remain time options",
-                "de": "remainTime zeitoptionen hinzufügen",
-                "ru": "добавить опции времени",
-                "pt": "adicionar opções de tempo",
-                "nl": "vertaling:",
-                "fr": "ajouter des options de temps",
-                "it": "aggiungere rimangono opzioni di tempo",
-                "es": "añadir opciones de tiempo",
-                "pl": "opcje czasowe",
-                "zh-cn": "增加时间的选择"
-            },
-            "0.0.2": {
-                "en": "fix for adapterChecker",
-                "de": "Fehlerbehebung für Adapter Prüfer",
-                "ru": "исправить для адаптера Проверить",
-                "pt": "correção para o adaptador Checker",
-                "nl": "_ Checker",
-                "fr": "fixation pour adaptateur Checker",
-                "it": "fissaggio per adattatore Checker",
-                "es": "fijación para adaptador Checker",
-                "pl": "naprawić Checker",
-                "zh-cn": "f 配 方 车臣"
-            },
-            "0.0.1": {
-                "en": "initial release",
-                "de": "Erstveröffentlichung",
-                "ru": "Начальная версия",
-                "pt": "lançamento inicial",
-                "nl": "Eerste uitgave",
-                "fr": "Première version",
-                "it": "Versione iniziale",
-                "es": "Versión inicial",
-                "pl": "Pierwsze wydanie",
-                "zh-cn": "首次出版"
-            }
-        },
-        "titleLang": {
-            "en": "ecoflow Powerstations",
-            "de": "ecoflow Kraftwerke",
-            "ru": "Электростанции Ecoflow",
-            "pt": "Centrais elétricas ecoflow",
-            "nl": "ecoflow-krachtcentrales",
-            "fr": "ecoflow Centrales électriques",
-            "it": "centrali elettriche ecoflow",
-            "es": "Centrales eléctricas ecoflow",
-            "pl": "Elektrownie ecoflow",
-            "zh-cn": "ecoflow 发电站"
-        },
-        "desc": {
-            "en": "ecoflow powerstation",
-            "de": "ecoflow Kraftwerk",
-            "ru": "электростанция экопотока",
-            "pt": "estação de energia ecoflow",
-            "nl": "ecoflow krachtcentrale",
-            "fr": "centrale ecoflow",
-            "it": "centrale elettrica ecoflow",
-            "es": "estación de energía ecoflow",
-            "pl": "elektrownia ecoflow",
-            "zh-cn": "生态流电站"
-        },
-        "authors": [
-            "Newan <info@newan.de>"
-        ],
-        "keywords": [
-            "ecoflow powerstation"
-        ],
-        "license": "MIT",
-        "platform": "Javascript/Node.js",
-        "main": "build/main.js",
-        "icon": "ecoflow.png",
-        "enabled": true,
-        "extIcon": "https://raw.githubusercontent.com/Newan/ioBroker.ecoflow/main/admin/ecoflow.png",
-        "readme": "https://github.com/Newan/ioBroker.ecoflow/blob/main/README.md",
-        "loglevel": "info",
-        "mode": "daemon",
-        "type": "energy",
-        "compact": true,
-        "connectionType": "cloud",
-        "dataSource": "poll",
-        "adminUI": {
-            "config": "json"
-        },
-        "dependencies": [
-            {
-                "js-controller": ">=3.3.22"
-            }
-        ],
-        "globalDependencies": [
-            {
-                "admin": ">=5.1.13"
-            }
-        ]
+  "common": {
+    "name": "ecoflow",
+    "version": "0.0.4",
+    "news": {
+      "0.0.4": {
+        "en": "update for latest-repository",
+        "de": "Update für neuestes Repository",
+        "ru": "обновление для последнего репозитория",
+        "pt": "atualização para o repositório mais recente",
+        "nl": "update voor laatste-repository",
+        "fr": "mise à jour pour le dernier référentiel",
+        "it": "aggiornamento per l'ultimo repository",
+        "es": "actualización para el último repositorio",
+        "pl": "aktualizacja do najnowszego repozytorium",
+        "zh-cn": "更新最新存储库"
+      },
+      "0.0.3": {
+        "en": "add remain time options",
+        "de": "remainTime zeitoptionen hinzufügen",
+        "ru": "добавить опции времени",
+        "pt": "adicionar opções de tempo",
+        "nl": "vertaling:",
+        "fr": "ajouter des options de temps",
+        "it": "aggiungere rimangono opzioni di tempo",
+        "es": "añadir opciones de tiempo",
+        "pl": "opcje czasowe",
+        "zh-cn": "增加时间的选择"
+      },
+      "0.0.2": {
+        "en": "fix for adapterChecker",
+        "de": "Fehlerbehebung für Adapter Prüfer",
+        "ru": "исправить для адаптера Проверить",
+        "pt": "correção para o adaptador Checker",
+        "nl": "_ Checker",
+        "fr": "fixation pour adaptateur Checker",
+        "it": "fissaggio per adattatore Checker",
+        "es": "fijación para adaptador Checker",
+        "pl": "naprawić Checker",
+        "zh-cn": "f 配 方 车臣"
+      },
+      "0.0.1": {
+        "en": "initial release",
+        "de": "Erstveröffentlichung",
+        "ru": "Начальная версия",
+        "pt": "lançamento inicial",
+        "nl": "Eerste uitgave",
+        "fr": "Première version",
+        "it": "Versione iniziale",
+        "es": "Versión inicial",
+        "pl": "Pierwsze wydanie",
+        "zh-cn": "首次出版"
+      }
     },
-    "protectedNative": [
-        "secretkey"
-    ],
-    "encryptedNative": [
-        "secretkey"
-    ],
-    "native": {
-        "polltime": 30,
-        "apikey": "",
-        "sn": "",
-        "secretkey": ""
+    "titleLang": {
+      "en": "ecoflow Powerstations",
+      "de": "ecoflow Kraftwerke",
+      "ru": "Электростанции Ecoflow",
+      "pt": "Centrais elétricas ecoflow",
+      "nl": "ecoflow-krachtcentrales",
+      "fr": "ecoflow Centrales électriques",
+      "it": "centrali elettriche ecoflow",
+      "es": "Centrales eléctricas ecoflow",
+      "pl": "Elektrownie ecoflow",
+      "zh-cn": "ecoflow 发电站"
     },
-    "objects": [],
-    "instanceObjects": [
-        {
-            "_id": "info",
-            "type": "channel",
-            "common": {
-                "name": "Information"
-            },
-            "native": {}
-        },
-        {
-            "_id": "info.connection",
-            "type": "state",
-            "common": {
-                "role": "indicator.connected",
-                "name": "If communication with ecoflow works",
-                "type": "boolean",
-                "read": true,
-                "write": false,
-                "def": false
-            },
-            "native": {}
-        },
-        {
-            "_id": "status",
-            "type": "channel",
-            "common": {
-                "name": "Status"
-            },
-            "native": {}
-        },
-        {
-            "_id": "status.soc",
-            "type": "state",
-            "common": {
-                "role": "state",
-                "name": "batterySoc",
-                "type": "number",
-                "read": true,
-                "write": false,
-                "def": 0
-            },
-            "native": {}
-        },
-        {
-            "_id": "status.remainTime",
-            "type": "state",
-            "common": {
-                "role": "state",
-                "name": "remainTime",
-                "type": "number",
-                "read": true,
-                "write": false,
-                "def": 0
-            },
-            "native": {}
-        },
-        {
-            "_id": "status.remainTimeDay",
-            "type": "state",
-            "common": {
-                "role": "state",
-                "name": "remainTimeDay",
-                "type": "number",
-                "read": true,
-                "write": false,
-                "def": 0
-            },
-            "native": {}
-        },
-        {
-            "_id": "status.remainTimeHour",
-            "type": "state",
-            "common": {
-                "role": "state",
-                "name": "remainTimeHour",
-                "type": "number",
-                "read": true,
-                "write": false,
-                "def": 0
-            },
-            "native": {}
-        },
-        {
-            "_id": "status.remainTimeMinute",
-            "type": "state",
-            "common": {
-                "role": "state",
-                "name": "remainTimeMinute",
-                "type": "number",
-                "read": true,
-                "write": false,
-                "def": 0
-            },
-            "native": {}
-        },
-        {
-            "_id": "status.wattsOutSum",
-            "type": "state",
-            "common": {
-                "role": "state",
-                "name": "wattsOutSum",
-                "type": "number",
-                "read": true,
-                "write": false,
-                "def": 0
-            },
-            "native": {}
-        },
-        {
-            "_id": "status.wattsInSum",
-            "type": "state",
-            "common": {
-                "role": "state",
-                "name": "wattsInSum",
-                "type": "number",
-                "read": true,
-                "write": false,
-                "def": 0
-            },
-            "native": {}
-        }
+    "desc": {
+      "en": "ecoflow powerstation",
+      "de": "ecoflow Kraftwerk",
+      "ru": "электростанция экопотока",
+      "pt": "estação de energia ecoflow",
+      "nl": "ecoflow krachtcentrale",
+      "fr": "centrale ecoflow",
+      "it": "centrale elettrica ecoflow",
+      "es": "estación de energía ecoflow",
+      "pl": "elektrownia ecoflow",
+      "zh-cn": "生态流电站"
+    },
+    "authors": [
+      "Newan <info@newan.de>"
+    ],
+    "keywords": [
+      "ecoflow powerstation"
+    ],
+    "license": "MIT",
+    "platform": "Javascript/Node.js",
+    "main": "build/main.js",
+    "icon": "ecoflow.png",
+    "enabled": true,
+    "extIcon": "https://raw.githubusercontent.com/Newan/ioBroker.ecoflow/main/admin/ecoflow.png",
+    "readme": "https://github.com/Newan/ioBroker.ecoflow/blob/main/README.md",
+    "loglevel": "info",
+    "mode": "daemon",
+    "type": "energy",
+    "compact": true,
+    "connectionType": "cloud",
+    "dataSource": "poll",
+    "adminUI": {
+      "config": "json"
+    },
+    "dependencies": [
+      {
+        "js-controller": ">=6.0.11"
+      }
+    ],
+    "globalDependencies": [
+      {
+        "admin": ">=5.1.13"
+      }
     ]
+  },
+  "protectedNative": [
+    "secretkey"
+  ],
+  "encryptedNative": [
+    "secretkey"
+  ],
+  "native": {
+    "polltime": 30,
+    "apikey": "",
+    "sn": "",
+    "secretkey": ""
+  },
+  "objects": [],
+  "instanceObjects": [
+    {
+      "_id": "info",
+      "type": "channel",
+      "common": {
+        "name": "Information"
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.connection",
+      "type": "state",
+      "common": {
+        "role": "indicator.connected",
+        "name": "If communication with ecoflow works",
+        "type": "boolean",
+        "read": true,
+        "write": false,
+        "def": false
+      },
+      "native": {}
+    },
+    {
+      "_id": "status",
+      "type": "channel",
+      "common": {
+        "name": "Status"
+      },
+      "native": {}
+    },
+    {
+      "_id": "status.soc",
+      "type": "state",
+      "common": {
+        "role": "state",
+        "name": "batterySoc",
+        "type": "number",
+        "read": true,
+        "write": false,
+        "def": 0
+      },
+      "native": {}
+    },
+    {
+      "_id": "status.remainTime",
+      "type": "state",
+      "common": {
+        "role": "state",
+        "name": "remainTime",
+        "type": "number",
+        "read": true,
+        "write": false,
+        "def": 0
+      },
+      "native": {}
+    },
+    {
+      "_id": "status.remainTimeDay",
+      "type": "state",
+      "common": {
+        "role": "state",
+        "name": "remainTimeDay",
+        "type": "number",
+        "read": true,
+        "write": false,
+        "def": 0
+      },
+      "native": {}
+    },
+    {
+      "_id": "status.remainTimeHour",
+      "type": "state",
+      "common": {
+        "role": "state",
+        "name": "remainTimeHour",
+        "type": "number",
+        "read": true,
+        "write": false,
+        "def": 0
+      },
+      "native": {}
+    },
+    {
+      "_id": "status.remainTimeMinute",
+      "type": "state",
+      "common": {
+        "role": "state",
+        "name": "remainTimeMinute",
+        "type": "number",
+        "read": true,
+        "write": false,
+        "def": 0
+      },
+      "native": {}
+    },
+    {
+      "_id": "status.wattsOutSum",
+      "type": "state",
+      "common": {
+        "role": "state",
+        "name": "wattsOutSum",
+        "type": "number",
+        "read": true,
+        "write": false,
+        "def": 0
+      },
+      "native": {}
+    },
+    {
+      "_id": "status.wattsInSum",
+      "type": "state",
+      "common": {
+        "role": "state",
+        "name": "wattsInSum",
+        "type": "number",
+        "read": true,
+        "write": false,
+        "def": 0
+      },
+      "native": {}
+    }
+  ]
 }
